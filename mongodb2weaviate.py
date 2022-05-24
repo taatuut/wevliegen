@@ -27,7 +27,7 @@ db_name='datafitness'
 col_name='contents'
 db = mongoClient[db_name]
 filter = {}
-limit = 4 # 0 is no limit
+limit = 10 # 0 is no limit
 
 documents = list(db[col_name].find(filter).limit(limit))
 #documents = db[col_name].find(filter).limit(limit)
